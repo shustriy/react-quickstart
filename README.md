@@ -3,11 +3,11 @@
 - docker-compose up 
 
 #2. NPM install
-- docker exec -it angular-tutorial-tests-web bash
+- docker exec -it react-quickstart-web bash
 - execute `./dev_install.sh`
 
 ##4. Run Container
-- docker start angular-tutorial-tests-web && docker exec -it angular-tutorial-tests-web bash
+- docker start react-quickstart-web && docker exec -it react-quickstart-web bash
 
 ## IMAGES
 #Show all images

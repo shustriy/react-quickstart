@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  react_quickstart_web:
+    container_name: react-quickstart-web
+    build:
+      context: ./frontend
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - "./frontend/source:/usr/share/nginx/html"
+    ports:
+      - "8081:80"
+    networks:
+      - react-quickstart-network
+
+networks:
+  react-quickstart-network:
+    driver: bridge
